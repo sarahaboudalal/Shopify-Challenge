@@ -7,9 +7,9 @@ export default function HomePage(){
 
     return(
         <div  className="bg-gray-300 h-fit">
-        <h1 className="text-3xl font-bold p-6">The Shoppies</h1>
+        <h1 className="text-3xl font-bold p-6 ">The Shoppies</h1>
         <SearchMovies />
-        <div className="flex flex-row">
+        <div className="flex flex-col md:flex-row">
         <SearchResults />
         <NominatedList />
         </div>

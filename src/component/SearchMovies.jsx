@@ -21,12 +21,12 @@ export default function SearchMovies() {
         <form
         onSubmit={(e) => handleSubmit(e, keyID)}>
         <input 
-        className="border-slate-300 border-2 rounded p-1"
+        className="border-slate-300 border-2 rounded p-1 w-full"
         placeholder="Movie Title" 
         value={keyID}
         onChange={(e) => setKeyID(e.target.value)}>
         </input>
-        <button type="submit" className="font-semibold border-slate-300 border-2 rounded px-2 p-1 mx-2">Search</button>
+        <button type="submit" className="font-semibold border-slate-300 border-2 rounded px-2 p-1 my-2 hover:bg-gray-300">Search</button>
         </form>
         </div>
     )
