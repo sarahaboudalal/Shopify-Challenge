@@ -8,7 +8,7 @@ export default function SearchMovies() {
 
     const handleSubmit = async (e, key) => {
         e.preventDefault();
-        const resp = await fetch(`http://www.omdbapi.com/?s=${key}&apikey=${process.env.REACT_APP_API_KEY}`)
+        const resp = await fetch(`https://www.omdbapi.com/?s=${key}&apikey=${process.env.REACT_APP_API_KEY}`)
         const data = await resp.json()
         setMovies(data)
         setError(data.Error)
