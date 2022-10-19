@@ -11,8 +11,8 @@ export default function NominatedList(){
         setNomMovies([])
     }
     return (
-        <div className='nom-movie-container'>
-        <h1>Nominated Movies:</h1>
+        <div className='bg-slate-100 m-6 p-2 shadow-2xl rounded basis-1/2'>
+        <h1 className="text-xl font-bold">Nominated Movies:</h1>
         {nomMovies && 
             nomMovies.map((movie) => {
             return(

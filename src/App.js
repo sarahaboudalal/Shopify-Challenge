@@ -9,14 +9,14 @@ import WinnerMoviePage from './pages/WinnerMoviePage';
 
 function App() {
   return (
-    <div className="App">
+    <div>
     <MovieProvider>
     <Routes>
     <Route path='/' element={<HomePage/>}/>
     <Route path='/winner-page' element={<WinnerMoviePage/>}/>
     </Routes>
-      <Footer />
-      </MovieProvider>
+    <Footer />
+    </MovieProvider>
     </div>
   );
 }

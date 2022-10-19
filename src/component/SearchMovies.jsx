@@ -16,16 +16,17 @@ export default function SearchMovies() {
     }
 
     return (
-        <div>
-        <h3 >Seach Movie Title</h3>
-        <form 
+        <div className="bg-slate-100 m-6 px-3 py-6 shadow-2xl rounded">
+        <h3 className="text-xl font-bold mb-2">Seach Movie Title</h3>
+        <form
         onSubmit={(e) => handleSubmit(e, keyID)}>
         <input 
+        className="border-slate-300 border-2 rounded p-1"
         placeholder="Movie Title" 
         value={keyID}
         onChange={(e) => setKeyID(e.target.value)}>
         </input>
-        <button type="submit">Search</button>
+        <button type="submit" className="font-semibold border-slate-300 border-2 rounded px-2 p-1 mx-2">Search</button>
         </form>
         </div>
     )
